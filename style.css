@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+body{
+    overflow-x: hidden;
+}
+:root{
+    --Blue_Color:#4a7ae1;
+    --grey_color:#d2d2d2;
+}
+/* =============== (LA PARTIE DE LA NAVIGATION PRINCIPAL) ================= */
+.NAV_BAR_SUB{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--Blue_Color);
+}
+.NAV_BAR_SUB a{
+    text-decoration: none;
+    font-family: "Kanit";
+    color: var(--grey_color);
+    transition: .3s;
+    margin: 0 15px;
+}
+.NAV_BAR_SUB a:hover{
+    color: white;
+}
+.active_color{
+    color: white!important;
+}
+/* ================== ( PARTIE DE CONNEXION )  ==================================*/
+.CONNECTION_SITE{
+    display: flex;
+    padding: 10px 5px;
+    font-family: "Kanit";
+    align-items: center;
+}
+.SEARCHING,
+.CONNECTION{
+    width:100%;
+}
+.CONNECTION{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.SEARCHING .FORMULAIRE{
+    display: flex;
+}
+.CONNECTION a{
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: #4a7ae3;
+    padding: 10px 10px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    color: white;
+}
+.CONNECTION a:last-child{
+    color: var(--Blue_Color);
+    background-color: transparent;
+    border: 1px solid var(--Blue_Color);
+    font-weight: bolder;
+}
+.SEARCHING .FORMULAIRE input{
+    border:2px solid #bcbcbc7a;
+    width: 100%;
+    padding: 5px;
+    outline-color: #6589eb84;
+}
+.SEARCHING .FORMULAIRE button{
+    padding: 7px 20px;
+    border: none;
+    background-color: var(--Blue_Color);
+    color: white;
+    border-top-right-radius: 5px;
+    font-family: "Corbel";
+    border-bottom-right-radius: 5px;
+}
+/* ==================== La PARTIE DU SUB CONTAINER ============================*/
+.SUB_CONTENT_DIV{
+    background-color: #e3e3e39b;
+    text-align: center;
+    padding: 3em 2em 2em 1em;
+}
+.SUB_CONTENT_DIV a{
+    text-decoration: none;
+    color: white;
+}
+.INVENT_FONT{
+    font-size: 45px;
+    font-family: "Kanit";
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: #06154bc3;
+}
+.LOOK_FONT{
+    background-color: #11903de0;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    border-radius: 2px;
+    transition: .3s;
+}
+.LOOK_FONT:hover{
+    background-color: #11903d;
+}
+.LOOK_VIDEO{
+    font-family: "Corbel";
+}
+.LINK_VIDEO a{
+    margin: 5px 5px;
+    padding: 5px 10px;
+    background-color: var(--Blue_Color);
+    border-radius: 2px;
+}
+.SUB_INVENTAIRES P{
+    opacity: 0.7;
+}
+/* ======================== La PARTIE DE PUBLICATION ======================= */
+.MAIN_VIDEO{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.SITE_PUBLICITES{
+    margin-top: 5em;
+}
+.Last_pubs{
+    margin: 15px;
+    font-family: "Verdana";
+    border-bottom: 2px solid #5f5f5f3b;
+}
+.Last_pubs p{
+    opacity: 0.7;
+}
+.Last_pubs h1{
+    font-size: 24px;
+    color: var(--Blue_Color);
+    opacity: 0.8;
+    letter-spacing: 2px;
+}
+.Video_item{
+    width: 33.333%;
+    border: none;
+}
+.Video_item .item{
+    margin: 15px;
+    box-shadow: 0.3px 0.4px 5px grey;
+}
+.image_video img{
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+
+.image_video{
+    position: relative;
+}
+.view_time_pub{
+    display: flex;
+    justify-content: space-between;
+}
+.view_time_pub p{
+    opacity:0.5;
+    font-size: 12px;
+}
+.Video_item .item .image_video .Pause{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 35px solid white;
+}
+.explan_content p{
+    opacity: 0.8;
+}
+.explan_content,
+.info_video{
+    padding: 10px;
+    font-family: "Verdana"; 
+    font-size: 12px;
+}
+.time_publication_info h1{
+    overflow-x: hidden;
+    font-size: 15px;
+    opacity: 0.8;
+}
+.hidden{
+    display: none;
+}
+.title_video{
+    margin-bottom: 0.5em!important;
+}
